@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    padding-top: 1rem;
+}
+
+nav.active {
+    top: 0;
+    background: #fff;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    position: sticky;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.right {
+    font-size: 20px;
+    margin-left: 2rem;
+    background: linear-gradient(90deg, #7539dc, #c00dd1, #210dd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links a:hover {
+    color: #7539dc;
+    cursor: pointer;
+}
+
+.nav-links a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    color: rgb(73, 71, 71);
+}
+
+.btn {
+    padding: 0.5rem;
+    color: white;
+    margin-right: 1rem;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.btn a {
+    color: #f1f1f1;
+    list-style: none;
+    text-decoration: none;
+}
+
+#home {
+    text-align: center;
+    height: 100vh;
+    background-image: url(img.jpg);
+}
+
+.container {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.first-heading {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    font-size: 0.9rem
+}
+
+.first-gradiate {
+    background: linear-gradient(90deg, #7539dc, #c00dd1, #210dd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.para {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: rgb(93, 98, 98);
+}
+
+.container-btns {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.container-btns .btn {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.8rem;
+}
+
+.primary-btn {
+    background-color: black;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: black;
+    /* box-shadow: x solid black; */
+}
+
+.secondary-btn:hover {
+    background-color: #eff2f7;
+}
+
+.container-icons {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: rgb(93, 98, 98);
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container-icons a {
+    color: #94a3b8;
+}
+
+.scroll-indicator {
+    width: 26px;
+    height: 44px;
+    border: 2px solid #94a3b8;
+    border-radius: 20px;
+    position: relative;
+    margin: 40px auto 0;
+}
+
+.scroll-indicator span {
+    width: 6px;
+    height: 6px;
+    background: #94a3b8;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveDot 1.6s ease-in-out infinite;
+}
+
+
+
+@keyframes moveDot {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 12px);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+#about {
+    height: 100vh;
+}
+
+#about h2 {
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.about-left {
+    height: 100px;
+    margin-top: 3rem;
+
+}
+
+.about-left img {
+    height: 100vh;
+    width: auto;
+    border-radius: 1rem;
+    margin-left: 4rem;
+}
+
+.about-right {
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.about-right h3 {
+    margin-right: 27.5vw;
+}
+
+.about-right p {
+    margin-left: 52vw;
+    margin-top: 2rem;
+    text-align: justify;
+    font-weight: 500;
+    word-spacing: 0.2rem;
+    line-height: 1.6;
+    color: #687281;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: right;
+    margin-right: 4rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stat-box {}
+
+.stat-box h2 {
+    color: #7c3aed;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.stat-box p {
+    color: #687281;
+}
