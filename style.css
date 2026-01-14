@@ -3,17 +3,23 @@
     padding: 0;
 }
 
-body {}
 
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
-    background: transparent;
     align-items: center;
-    text-align: center;
-    height: 10vh;
-    padding-top: 1rem;
+
+    height: 80px;
+    padding: 0 2rem;
+
+    background: transparent;
+    transition: all 0.3s ease;
 }
+
 
 nav.active {
     top: 0;
@@ -22,7 +28,8 @@ nav.active {
     z-index: 100;
     position: sticky;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 
@@ -136,17 +143,24 @@ nav.active {
 }
 
 .container-icons {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 2rem;
     color: rgb(93, 98, 98);
-    gap: 1.5rem;
+    gap: 1.3rem;
     display: flex;
     justify-content: center;
 }
 
 .container-icons a {
-    color: #94a3b8;
+    color: #282b2e;
 }
+
+.container-icons a:hover{
+    color: #7539dc;
+    transform: 2px;
+}
+
+
 
 .scroll-indicator {
     width: 26px;
@@ -186,18 +200,28 @@ nav.active {
 }
 
 #about {
-    height: 100vh;
+    height: 130vh;
 }
 
-#about h2 {
-    text-align: center;
+#about .title{
+     text-align: center;
     margin-top: 15vh;
+    padding-top: 2rem;
+}
+.section-underline{
+  position: absolute;
+  width: 100px;
+  margin-top: 1rem;
+  height: 4px;
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
 }
 
 .about-left {
     height: 100px;
     margin-top: 3rem;
-
 }
 
 .about-left img {
@@ -205,6 +229,9 @@ nav.active {
     width: auto;
     border-radius: 1rem;
     margin-left: 4rem;
+    scale: 0.9;
+    transition: 0.3s;   
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .about-right {
@@ -234,8 +261,6 @@ nav.active {
     gap: 2rem;
 }
 
-.stat-box {}
-
 .stat-box h2 {
     color: #7c3aed;
     font-weight: 700;
@@ -246,3 +271,98 @@ nav.active {
 .stat-box p {
     color: #687281;
 }
+
+#Skills{
+    background-color: #f7f5f5;
+    height: 200vh;
+}
+
+#Skills .title{
+     text-align: center;
+     margin-bottom: 1rem;
+     padding-top: 5rem;
+}
+
+
+.cards{
+    height: 80vh;
+    width: auto;
+    display: flex;
+    margin-top: 5rem;
+}
+
+
+.cards h3{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cards p{
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.components {
+  background: rgba(156, 20, 218, 0.12);
+  padding: 3px 14px;
+  border-radius: 999px;
+  color: #9c14da;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.25s ease;
+}
+
+.components:hover {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(127, 0, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+
+.cards i{
+      background: linear-gradient(135deg, #cb61c6, #3607e0);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 20%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.card1{
+    margin: 2rem; 
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.card1:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card2{
+    background-color: #fff;
+     margin: 2rem;
+     padding: 2rem;
+     border-radius: 1.5rem;
+}
+
+.card2:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card3{
+    background-color: #fff;
+     margin: 2rem;
+     padding: 2rem;
+     border-radius: 1.5rem;
+}
+
+.card3:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
