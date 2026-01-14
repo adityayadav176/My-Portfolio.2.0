@@ -363,8 +363,12 @@ nav.active {
 }
 
 .skills {
-  padding: 60px 0;
+  padding: 60px 120px;
   text-align: center;
+}
+
+.underline{
+    margin-top: 3.5rem;
 }
 
 .skills h2 {
@@ -373,15 +377,19 @@ nav.active {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(4, 1fr); /* 4 in one row */
+  gap: 50px 40px; /* row-gap column-gap */
   justify-items: center;
+  align-items: start;
+  width: 80vw;
 }
 
 .skill {
   position: relative;
   width: 120px;
 }
+
+
 
 .skill svg {
   width: 120px;
@@ -396,11 +404,11 @@ nav.active {
 }
 
 .skill circle:first-child {
-  stroke: #e5e7eb; /* light gray */
+  stroke: #ebeef5; /* light gray */
 }
 
 .skill circle:last-child {
-  stroke: #8b5cf6; /* purple */
+  stroke: #7842f5; /* purple */
   stroke-dasharray: 314;
   stroke-dashoffset: calc(314 - (314 * var(--percent)) / 100);
   transition: stroke-dashoffset 1s ease;
@@ -408,7 +416,7 @@ nav.active {
 
 .percent {
   position: absolute;
-  top: 38px;
+  top: 48px;
   left: 0;
   right: 0;
   font-weight: 600;
