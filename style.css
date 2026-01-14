@@ -23,10 +23,11 @@ nav {
 
 nav.active {
     top: 0;
+    width: 95%;
     background: #fff;
     backdrop-filter: blur(10px);
     z-index: 100;
-    position: sticky;
+    position: fixed;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
@@ -90,7 +91,7 @@ nav.active {
     height: 100vh;
     align-items: center;
     justify-content: center;
-    margin-top: 8rem;
+    padding-top: 8rem;
 }
 
 .first-heading {
@@ -386,8 +387,6 @@ nav.active {
   width: 120px;
 }
 
-
-
 .skill svg {
   width: 120px;
   height: 120px;
@@ -444,6 +443,7 @@ nav.active {
 .tosts{
     display: flex;
     height: 95vh;
+     flex-wrap: wrap;   /* ✅ allows next line */
     justify-content: center;
     gap: 2rem;
 }
@@ -453,9 +453,10 @@ nav.active {
     border-radius: 1rem;
     overflow: hidden;
     align-items: center;
-    width: 30%;
-     background-color:#fff;
+     width: calc(33.33% - 1.5rem);
+    background-color:#fff;
 }
+
 
 .tost-contain{
     padding: 1.5rem;
@@ -504,13 +505,22 @@ nav.active {
   gap: 6px;
 
   transform: translateY(10px);
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 
 .tost-btn:hover {
   background: black;
   color: white;
 }
+
+.tost {
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.tost:hover {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
 
 .tost:hover .tost-overlay {
   opacity: 1;
@@ -525,6 +535,31 @@ nav.active {
   transform: scale(1.05);
 }
 
+.tost-contain{
+    margin-top: 2rem;
+}
+
+.tost-contain p {
+    padding-top: 1.3rem;
+     text-align: justify;
+    font-weight: 500;
+    word-spacing: 0.1rem;
+    line-height: 1.6;
+    color: #687281;
+}
+
+.tost-contain ul {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tost-contain ul li {
+    background-color: rgb(244, 241, 241);
+     padding: 3px 14px;
+    border-radius: 2rem;
+    list-style: none;
+}
 
 
 
