@@ -362,6 +362,65 @@ nav.active {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+.skills {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 50px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.skill {
+  position: relative;
+  width: 120px;
+}
+
+.skill svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.skill circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.skill circle:first-child {
+  stroke: #e5e7eb; /* light gray */
+}
+
+.skill circle:last-child {
+  stroke: #8b5cf6; /* purple */
+  stroke-dasharray: 314;
+  stroke-dashoffset: calc(314 - (314 * var(--percent)) / 100);
+  transition: stroke-dashoffset 1s ease;
+}
+
+.percent {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
 
 
 
