@@ -142,7 +142,7 @@ nav.active {
 .container-icons {
     font-size: 1.3rem;
     margin-top: 2rem;
-    color: rgb(93, 98, 98);
+    color: rgb(12, 12, 12);
     gap: 1.3rem;
     display: flex;
     justify-content: center;
@@ -558,10 +558,10 @@ nav.active {
 }
 
 #Contact{
-    height: 100vh;
+    height: 125vh;
     max-width: 100%;
     padding-top: 3.5rem;
-    background-color: rgb(232, 220, 220);
+    background-color: rgb(252, 250, 252);
 }
 
 .Con-heading{
@@ -577,10 +577,15 @@ nav.active {
     color: #687281;
 }
 
+.Con-heading span{
+    margin-top: 2.5rem;
+}
+
 .Con-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .contact-right{
@@ -647,13 +652,210 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
-
-
 .contact-left{
-    background-color: rebeccapurple;
      height: 70vh;
-    width: 45%;
+   max-width: 500px;
 }
+
+.contact-left h2 {
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.contact-left p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+/* Contact Cards */
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  padding: 10px 22px;
+  border-radius: 14px;
+  box-shadow: 2px 4px  rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon Circle */
+.contact-icon {
+  width: 52px;
+  margin-top: 2rem;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.contact-icon.email {
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+}
+
+.contact-icon.linkedin {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.contact-icon.github {
+  background: linear-gradient(135deg, #0f172a, #334155);
+}
+
+/* Text Info */
+.info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.info span {
+  font-size: 14px;
+  color: #64748b;
+}
+
+header{
+    background-color: #070234;
+    color: #fff;
+    height: 60vh;
+}
+
+.header-containent{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    height: 40vh;
+}
+
+
+.first-containent h2{
+    margin-left: 2rem;
+    background: linear-gradient(90deg, #966be0, #de6be9, #5348b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 3rem 0 0 2rem ;
+}
+
+.first-containent p{
+   padding: 1rem 0 0 2rem;
+   font-size: 17px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* center whole block */
+}
+
+.quick-links h3 {
+  margin-bottom: 15px;
+  color: white;
+  margin-top: 3rem;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;    /* center text */
+}
+
+.quick-links li {
+  margin: 8px 0;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: #9b5cff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: white;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.connect h3 {
+  color: #ffffff;
+  margin-top: 3rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.connect-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.connect-icons a {
+  width: 42px;
+   text-decoration: none;
+  list-style: none;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.connect-icons a:hover {
+  background: #7c3aed;
+  transform: translateY(-3px);
+}
+
+.connect-text {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.connect-text:hover {
+  color: #ffffff;
+}
+
+.certified-para{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+}
+
+header hr{
+    opacity: 0.2;
+}
+
+
+
+
+
+
+
+
 
 
 
