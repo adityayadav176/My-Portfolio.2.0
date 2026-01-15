@@ -314,7 +314,7 @@
         <h2>Get In Touch</h2>
       <span class="section-underline"></span>
 
-      <p class="Contact-f-para">I'm always open to discussing new projects, creative ideas, or opportunities to be part
+      <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part
         of your vision</p>
     </div>
     <div class="Con-container">
@@ -345,18 +345,28 @@
       </div>
       <div class="contact-right">
         <div class="contact-form">
-          <p>Name</p>
-          <form>
+         <form>
+          <div class="form-group">
+            <label>Name</label>
             <input type="text" placeholder="Your name" required>
-            <p>Email</p>
-            <input type="text" placeholder="Your.email@example.com" required>
-            <p>Message</p>
-            <input type="text" placeholder="Tell me about your project..." required>
+          </div>
 
-            <button id="form-btn">Send Message
-              <i class="fa-regular fa-paper-plane"></i>
-            </button>
-          </form>
+           <div class="form-group">
+            <label>Email</label>
+            <input type="text" placeholder="your.email@example.com" required>
+          </div>
+
+           <div class="form-group">
+            <label>Message</label>
+         <textarea rows="2" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+           <button type="submit">
+          Send Message 
+           <i class="fa-regular fa-paper-plane"></i>
+        </button>
+
+         </form>
         </div>
       </div>
     </div>
