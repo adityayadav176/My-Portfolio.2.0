@@ -24,13 +24,13 @@ nav {
 nav.active {
     top: 0;
     width: 95%;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     z-index: 100;
     position: fixed;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
     transition: all 0.3s ease;
-     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 
@@ -40,19 +40,17 @@ nav.active {
     background: linear-gradient(90deg, #7539dc, #c00dd1, #210dd4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 1rem;
 }
 
 .left {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-bottom: 1rem;
 }
 
 .nav-links {
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .nav-links a:hover {
