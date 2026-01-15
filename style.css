@@ -422,7 +422,7 @@ nav.active {
 
 #Projects{
     height: 130vh;
-      background-color: rgb(238, 247, 247);
+      background-color: rgb(249, 249, 247);
    
 }
 
@@ -438,10 +438,10 @@ nav.active {
 
 .tosts{
     display: flex;
-    height: 95vh;
+    height: 88vh;
      flex-wrap: wrap;   /* ✅ allows next line */
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .tost{
@@ -449,7 +449,7 @@ nav.active {
     border-radius: 1rem;
     overflow: hidden;
     align-items: center;
-     width: calc(33.33% - 1.5rem);
+     width: calc(30.0% - 1rem);
     background-color:#fff;
 }
 
