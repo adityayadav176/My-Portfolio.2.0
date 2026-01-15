@@ -201,14 +201,11 @@ nav.active {
 }
 
 #about .title{
-     text-align: center;
-    margin-top: 15vh;
-    padding-top: 2rem;
+    text-align: center;
 }
 .section-underline{
   position: absolute;
   width: 100px; 
-  margin-top: 1rem;
   height: 4px;
   background: linear-gradient(90deg, #7f00ff, #e100ff);
   left: 50%;
@@ -256,6 +253,7 @@ nav.active {
     margin-right: 4rem;
     align-items: center;
     gap: 2rem;
+    margin-top: 3rem;
 }
 
 .stat-box h2 {
@@ -287,10 +285,16 @@ nav.active {
     margin-top: 5rem;
 }
 
+.skills-para{
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #687281;
+}
 
 .cards h3{
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .cards p{
@@ -316,7 +320,7 @@ nav.active {
 }
 
 .cards i{
-      background: linear-gradient(135deg, #cb61c6, #3607e0);
+    background: linear-gradient(135deg, #cb61c6, #3607e0);
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 20%;
     color: #fff;
@@ -374,7 +378,6 @@ nav.active {
   grid-template-columns: repeat(4, 1fr); /* 4 in one row */
   gap: 50px 40px; /* row-gap column-gap */
   justify-items: center;
-  align-items: start;
   width: 80vw;
 }
 
@@ -422,8 +425,7 @@ nav.active {
 
 #Projects{
     height: 130vh;
-      background-color: rgb(249, 249, 247);
-   
+    background-color: rgb(249, 249, 247);
 }
 
 .project-data{
@@ -433,15 +435,16 @@ nav.active {
 .project-first-para{
     text-align: center;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 500;
+    color: #687281;
 }
 
 .tosts{
     display: flex;
     height: 88vh;
-     flex-wrap: wrap;   /* ✅ allows next line */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .tost{
@@ -449,7 +452,7 @@ nav.active {
     border-radius: 1rem;
     overflow: hidden;
     align-items: center;
-     width: calc(30.0% - 1rem);
+    width: 30%;
     background-color:#fff;
 }
 
@@ -461,8 +464,6 @@ nav.active {
 .tost-img {
   position: relative;
   overflow: hidden;
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
 }
 
 .tost-img img {
@@ -537,10 +538,9 @@ nav.active {
 
 .tost-contain p {
     padding-top: 1.3rem;
-     text-align: justify;
+    text-align: justify;
     font-weight: 500;
-    word-spacing: 0.1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #687281;
 }
 
@@ -555,6 +555,22 @@ nav.active {
      padding: 3px 14px;
     border-radius: 2rem;
     list-style: none;
+}
+
+#Contact{
+    height: 100vh;
+    max-width: 100%;
+}
+
+.Con-heading{
+    text-align: center;
+}
+
+.Con-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
 }
 
 
