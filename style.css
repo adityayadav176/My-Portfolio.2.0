@@ -122,12 +122,12 @@ html {
       color: white;
   }
 
-  .secondary-btn {
+  .Download-cv-btn {
       background-color: white;
       color: black;
   }
 
-  .secondary-btn:hover {
+  .Download-cv-btn:hover {
       background-color: #eff2f7;
   }
 
