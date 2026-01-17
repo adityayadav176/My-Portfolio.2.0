@@ -82,13 +82,10 @@ html {
       height: 100vh;
       background-image: url(assets/img.jpg);
   }
-
 .container {
   min-height: calc(100vh - 80px);
   padding-top: 10rem;
 }
-
-
   .first-heading {
       display: flex;
       gap: 1rem;
