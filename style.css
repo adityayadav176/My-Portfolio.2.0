@@ -281,6 +281,9 @@ html {
       padding: 2rem;
       border-radius: 1rem;
   }
+  .card {
+  transition-delay: calc(var(--i) * 0.15s);
+}
 
    .cards i{
       background: linear-gradient(135deg, #cb61c6, #3607e0);
@@ -382,7 +385,7 @@ html {
   .skill circle:last-child {
     stroke: #7842f5; /* purple */
     stroke-dasharray: 314;
-    stroke-dashoffset: calc(314 - (314 * var(--percent)) / 100);
+    stroke-dashoffset: 314;
     transition: stroke-dashoffset 1s ease;
   }
 
@@ -812,9 +815,23 @@ html {
       font-size: 1.1rem;
   }
 
+
   header hr{
       opacity: 0.2;
   }
+
+  /* ===== SCROLL ANIMATION ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
