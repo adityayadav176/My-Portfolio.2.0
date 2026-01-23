@@ -61,6 +61,10 @@ html {
   }
 
 
+  .nav-links a {
+      font-size: 1.2rem;
+      color: rgb(73, 71, 71);
+  }
 
   .btn {
       padding: 0.5rem;
