@@ -2,10 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body {
-  font-family: system-ui, sans-serif;
-  color: #1f2937;
-}
+
 a {
   text-decoration: none;
   color: inherit;
